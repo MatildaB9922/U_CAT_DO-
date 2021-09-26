@@ -1,0 +1,243 @@
+
+
+.site-header
+{
+    
+    display: grid;
+    grid-template-columns: .5fr .3fr.5fr  ;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        " L B V "
+        " M M M "
+ 
+
+
+    ;
+    
+    align-items: center; 
+    padding: 3rem;
+    background-color:blanchedalmond;
+    gap: 40px;
+}
+
+/* VAROKORG */
+
+.varo{
+    
+    font-size: 3rem;
+    color:rgb(5, 5, 5);
+    align-content: center;
+    grid-area: V;
+    
+}
+.varo :hover {
+    color: rgb(165, 10, 192);
+   
+}
+
+
+
+
+/** BRAND **/
+.brand {
+    grid-area: L;
+    align-content: center;
+}
+
+
+.brand-link {
+    color :rgb(5, 5, 5);
+    text-decoration: none;
+    font-size: 1rem; 
+    display: flex ;
+    
+    
+    
+       }
+
+    .site-navigation {
+        grid-area: M;
+        display: none;
+         
+
+         }
+         /* Toggle Button */
+.toggle-btn {
+    grid-area: B;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    padding: 0.5em;
+    background-color:black;
+    cursor: pointer;
+    border-radius: 10%;
+    
+
+}
+
+.toggle-btn:hover{
+
+    background-color: rgb(29, 106, 109);
+}
+         
+         
+         .toggle-btn .bars,
+         .toggle-btn .bars::before,
+    .toggle-btn .bars::after {
+             display: block;
+            align-content: center;
+            
+             width: 100%;
+             height: 2px;
+             background-color:blanchedalmond;
+         }
+         .toggle-btn .bars::before,
+         .toggle-btn .bars::after {
+             content: '';
+             ;
+         }
+         
+         .toggle-btn .bars::before {
+             position: relative;
+             top: -10px;
+         }
+         
+         .toggle-btn .bars::after {
+             position: relative;
+             top: 8px;
+         }
+
+         
+
+/* Checkbox */
+.toggle-menu {
+    grid-area: M;
+    display: none;
+    
+    
+ }  
+
+ .toggle-menu:checked + .site-navigation {
+    display: block;
+}
+ 
+ 
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-attachment: black;
+}
+.menu-item {
+     flex-basis: 100%; 
+     padding-top: 10px;
+}
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem 1.5rem;
+    color: white;
+    background-color: black ;
+    margin: .5rem;
+    font-size: 30px;
+    
+}
+.menu-item.active a {
+    background-color: crimson;
+}
+.menu-item a:hover {
+    color: #000;
+    background-color: darkorange;
+}
+
+main{
+
+
+    display: grid;
+
+
+    
+    
+    ;
+
+
+}
+/* FOOTER */ 
+
+.site-footer {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    background-color: palegreen;
+    
+    
+    
+    ;
+}
+
+
+/** kolumner med flex **/
+.site-footer .container {
+    padding:2rem;
+   
+    display: flex;
+    flex-direction: row;
+}
+.site-footer .container > {
+    width: 50%;
+    
+}
+.site-footer .container > { 
+    margin : 5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction:row;
+     padding: 1rem;
+
+}
+
+.social-links {
+    flex-direction: column;
+    padding:5rem
+
+}
+
+/* OM OSS*/
+.omoss {
+
+    padding: 2rem;
+       
+        
+    
+
+    
+}
+
+.omoss img {
+        width:55%;
+        float: right;
+        padding: 1rem;
+        
+
+           }
+
+           .post2{
+
+            float: left;
+
+
+
+
+          
+    
+
+
+           }
+
+    

@@ -1,0 +1,366 @@
+
+.site-header
+{
+    
+    display: grid; /*
+    grid-template-columns: .5fr .5fr .5fr  ;
+    grid-template-rows: 1fr auto;
+    */
+    grid-template-areas:
+        " L B V"
+        " M M M"
+ 
+
+
+    ;
+    
+    align-items: center;
+    padding: 1rem;
+    background-color:blanchedalmond;
+    column-gap: 10px;
+}
+
+/* VAROKORG */
+
+.varo{
+    
+    font-size: 2rem;
+    color:rgb(5, 5, 5);
+    align-content: center;
+    grid-area: V;
+    
+}
+.varo :hover {
+    color: rgb(127, 7, 131);
+   
+}
+
+
+
+
+/** BRAND **/
+.brand {
+    grid-area: L;
+    align-content: center;
+    
+}
+
+
+.brand-link {
+    
+    color :rgb(5, 5, 5);
+    text-decoration: none;
+    font-size: 2rem; 
+    display: flex ;
+    
+    
+    
+    
+       }
+
+    .site-navigation {
+        grid-area: M;
+        display: none;
+         
+
+         }
+
+         h1 {  font-size: 1.7rem;}
+         h2 { font-size: 1.5rem;}
+         h2 {font-size: 1.3rem;}
+
+         /* Toggle Button */
+.toggle-btn {
+    grid-area: B;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.5em;
+    background-color:rgb(6, 7, 7);
+    cursor: pointer;
+    border-radius: 10%;
+
+
+}
+
+
+
+.toggle-btn:hover{
+
+    background-color: rgb(4, 99, 155);
+
+}
+         
+         
+         .toggle-btn .bars,
+         .toggle-btn .bars::before,
+    .toggle-btn .bars::after {
+             display: block;
+            align-content: center;
+            
+             width: 100%;
+             height: 2px;
+             background-color:blanchedalmond;
+         }
+
+         
+
+
+         .toggle-btn .bars::before,
+         .toggle-btn .bars::after {
+             content: '';
+             ;
+         }
+         
+         .toggle-btn .bars::before {
+             position: relative;
+             top: -10px;
+         }
+         
+         .toggle-btn .bars::after {
+             position: relative;
+             top: 8px;
+         }
+
+         
+
+/* Checkbox */
+.toggle-menu {
+    grid-area: M;
+    display: none;
+
+    
+    
+ }  
+
+ .toggle-menu:checked + .site-navigation {
+    display: block;
+}
+ 
+ 
+
+.menu {
+   
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.menu-item {
+     flex-basis: 100%; 
+     padding: 5px;
+}
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    
+    padding: 1.5rem 1rem;
+    color: white;
+    background-color: black ;
+    margin: 1rem;
+    font-size: 25px;
+  
+}
+.menu-item.active a {
+    background-color:paleturquoise;
+}
+.menu-item a:hover {
+    color: #000;
+    background-color:rgb(246, 150, 33);
+}
+
+
+main{
+
+
+    display: grid
+    
+    ;
+
+
+}
+
+/* FOOTER */ 
+
+
+
+
+/** kolumner med flex **/
+.site-footer .container {
+    display: flex;
+    flex-direction: row;
+    
+   
+    
+}
+  
+
+.site-footer .container  {
+    padding: 2rem;
+    background-color: pink;
+}
+    
+
+
+
+.social-links {
+ padding-top: 19rem;
+    
+    
+    
+}
+
+
+/*VOROKOR*/
+
+.mainvaro{
+
+
+    background-color: darkgray;
+    
+}
+
+
+.varokorg {
+
+background-color: lightyellow;
+ 
+padding:1rem;
+
+
+
+  }
+
+
+.bag1{
+    
+
+display: flex;
+float: left;
+gap: 1rem;
+
+}
+.bag2 {
+
+    font-size: 7rem;
+    color:rebeccapurple;
+    padding:1rem;
+
+
+    
+
+
+
+    
+}
+
+.form2{
+background-color: lightsteelblue;
+display: flex;
+flex-direction: column;
+font-size: 1rem;
+padding:2rem;
+
+
+ }
+
+
+input
+
+
+ { background-color: whitesmoke;
+    display: block;
+    padding: 1em;
+    font-size: 1rem;
+    margin: 2rem;
+    width: auto;
+    
+    
+  }
+
+  .form3{
+
+    padding:1rem;
+    
+
+
+    background-color:rgb(255, 218, 175);
+  }
+
+
+.form3rad{
+
+    font-size: 1rem;
+
+padding: 2rem;
+ 
+ 
+}
+
+.betal{
+
+
+font-size: 1rem;
+flex-direction: column;
+    
+}
+
+.skicka {
+display: flex;
+padding: 1rem;
+background-color: rgb(255, 255, 57);
+float:right ;
+border-radius: 5%;
+font-size: 3rem;
+    
+}
+.skicka:hover{
+
+
+font-size: 3rem;
+border-radius: 5%;
+background-color:rgb(255, 255, 11);
+text-decoration:none ;
+
+}
+
+.probuttommain1 {
+
+
+    font-size: 2rem;
+    
+}
+
+.probuttommain2{
+
+    font-size: 2rem;
+
+
+
+
+
+ }
+
+
+
+.probuttommain1 :hover{
+
+    background-color: rgb(251, 251, 82);
+    border-radius: 25%;
+    font-size: 2rem;
+
+   }
+
+
+.probuttommain2 :hover{
+
+    background-color: rgb(251, 251, 82);
+    border-radius: 25%;
+    font-size: 2rem;
+
+}
+
